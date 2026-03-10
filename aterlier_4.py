@@ -14,3 +14,14 @@ class Employe:
         if self.voitureService is not None:
             self.voitureService.chauffeur = None
             self.voitureService = None
+class Voiture:
+
+    def __init__(self, matricule, annee, marque, kilometrage):
+        self.matricule = matricule
+        self.annee = annee
+        self.marque = marque
+        self.kilometrage = kilometrage
+        self.chauffeur = None
+
+        def afficherInformations(self):
+            return (self.matricule, self.annee, self.marque, self.kilometrage, self.chauffeur)
