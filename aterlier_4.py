@@ -15,22 +15,20 @@ class Employe:
             self.voitureService.chauffeur = None
             self.voitureService = None
 class Voiture:
-
     def __init__(self, matricule, annee, marque, kilometrage):
         self.matricule = matricule
         self.annee = annee
         self.marque = marque
         self.kilometrage = kilometrage
         self.chauffeur = None
-
-        def afficherInformations(self):
-            return (self.matricule, self.annee, self.marque, self.kilometrage, self.chauffeur)
-e1 = Employe("I270520", "lounis", "younes")
+    def afficherInformations(self):
+        return (self.matricule, self.annee, self.marque, self.kilometrage, self.chauffeur)
+e1 = Employe("I270520", "Idir", "Nassim")
 e2 = Employe("B120399", "Bousekin", "Noureddine")
-e3 = Employe("K150800", "Ali", "boukhalfa")
-v1 = Voiture("AA123BB", 2025, "ford", 11000)
+e3 = Employe("K150800", "Ali", "Samir")
+v1 = Voiture("AA123BB", 2025, "Mazda", 11000)
 v2 = Voiture("CC456DD", 2025, "Honda", 8000)
-v3 = Voiture("EE789FF", 2024, "dodge", 15000)
+v3 = Voiture("EE789FF", 2024, "Kia", 15000)
 print(e1.afficherInformations())
 print(e2.afficherInformations())
 print(e3.afficherInformations())
