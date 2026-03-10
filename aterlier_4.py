@@ -1,5 +1,6 @@
 class Employe:
-    def __init__(self, id, nom):
-        self.id = id
+    def __init__(self, numeroPermis, nom, prenom):
+        self.numeroPermis = numeroPermis
         self.nom = nom
-        self.voiture = None
+        self.prenom = prenom
+        self.voitureService = None
